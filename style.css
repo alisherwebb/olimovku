@@ -469,14 +469,12 @@ nav ul li a:hover::after {
   resize: vertical;
 }
 
-
 footer {
   background-color: var(--secondary-color);
   color: white;
   text-align: center;
   padding: 20px 0;
 }
-
 
 @media (max-width: 992px) {
   .hero .container {
@@ -558,6 +556,11 @@ footer {
   .hero-content h1 {
     font-size: 2rem;
   }
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+
+  }
 
   .image-wrapper {
     width: 250px;
@@ -566,5 +569,12 @@ footer {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: -280px;
   }
 }
