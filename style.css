@@ -3,9 +3,9 @@
   --secondary-color: #2c3e50;
   --accent-color: #e74c3c;
   --light-color: #ecf0f1;
-  --dark-color: #2c3e50;
+  --dark-color: #ffffff;
   --text-color: #333;
-  --text-light: #777;
+  --text-light: #77700;
 }
 
 * {
@@ -23,6 +23,7 @@ body {
   background-color: #f9f9f9;
   color: var(--text-color);
   line-height: 1.6;
+  user-select: none;
 }
 
 .container {
@@ -71,7 +72,7 @@ section {
 }
 
 header {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -313,15 +314,15 @@ nav ul li a:hover::after {
 }
 
 .html {
-  width: 95%;
+  width: 70%;
 }
 
 .css {
-  width: 90%;
+  width: 75%;
 }
 
 .js {
-  width: 85%;
+  width: 30%;
 }
 
 .react {
