@@ -139,14 +139,14 @@ nav ul li a:hover::after {
   display: none;
   cursor: pointer;
   font-size: 1.5rem;
-  color: var(--dark-color);
+  color: white;
 }
 
 .hero {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(130deg, #f5f7fa 0%, #7690b9 100%);
   padding-top: 80px;
 }
 
@@ -156,6 +156,9 @@ nav ul li a:hover::after {
   justify-content: space-between;
 }
 
+section .container {
+  margin-top: 100px;
+}
 .hero-content {
   flex: 1;
   padding-right: 50px;
@@ -163,7 +166,7 @@ nav ul li a:hover::after {
 
 .hero-content h1 {
   font-size: 3.5rem;
-  margin-bottom: 20px;
+
   line-height: 1.2;
 }
 
@@ -201,7 +204,9 @@ nav ul li a:hover::after {
   object-fit: cover;
 }
 
-/* About section */
+.about {
+  background: linear-gradient(180deg, #f5f7fa 0%, #8d8492 100%);
+}
 .about-content {
   display: flex;
   gap: 50px;
@@ -215,7 +220,7 @@ nav ul li a:hover::after {
 .about-text h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: var(--dark-color);
+  color: #3498db;
 }
 
 .about-text p {
@@ -237,7 +242,7 @@ nav ul li a:hover::after {
 .personal-info div span:first-child {
   font-weight: 600;
   margin-right: 10px;
-  color: var(--dark-color);
+  color: black;
   min-width: 100px;
 }
 
@@ -274,7 +279,7 @@ nav ul li a:hover::after {
 }
 
 .skills {
-  background-color: white;
+  background: linear-gradient(130deg, #a4b5c1, #9fc5eb);
 }
 
 .skills-container {
@@ -296,7 +301,9 @@ nav ul li a:hover::after {
   font-weight: 600;
   color: var(--dark-color);
 }
-
+.projects {
+  background-color: rgb(44, 62, 80, 0.2);
+}
 .skill-bar {
   height: 10px;
   background-color: #eee;
@@ -404,7 +411,7 @@ nav ul li a:hover::after {
   width: 50px;
   height: 50px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -439,7 +446,7 @@ nav ul li a:hover::after {
 
 .contact-form {
   flex: 1;
-  background-color: white;
+  background-color: rgb(0, 0, 0, 0.2);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -552,9 +559,15 @@ footer {
     font-size: 2rem;
   }
 }
+/* .menu-toggle */
 @media (max-width: 576px) {
+  .logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
   .hero-content h1 {
     font-size: 2rem;
+    margin-bottom: 30px;
   }
   .hero .container {
     flex-direction: column;
@@ -570,7 +583,13 @@ footer {
     grid-template-columns: 1fr;
   }
   .hero-content {
-    margin-top: 80px;
+    margin-top: 70px;
   }
 }
 
+@media (max-width: 400px) {
+  .hero-content {
+    margin-top: 70px;
+  }
+}
+/* .info-item */
