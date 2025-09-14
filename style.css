@@ -390,11 +390,11 @@ section .container {
 }
 
 .js {
-  width: 30%;
+  width: 55%;
 }
 
 .react {
-  width: 80%;
+  width: 40%;
 }
 
 .projects-grid {
@@ -725,17 +725,16 @@ footer {
   }
 }
 
-/* Planshet uchun yaxshilash */
 @media (max-width: 992px) {
   .projects-grid {
-    grid-template-columns: 1fr 1fr; /* ikkita ustun */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 /* Telefon uchun yaxshilash */
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* faqat bitta ustun */
+    grid-template-columns: 1fr; 
   }
 
   .image-wrapper {
@@ -744,7 +743,7 @@ footer {
   }
 
   .contact-form {
-    padding: 20px; /* kichkina ekranlarda kamroq joy egallasin */
+    padding: 20px; 
   }
 
   .hero-content h1 {
@@ -756,7 +755,6 @@ footer {
   }
 }
 
-/* Juda kichkina ekranlar */
 @media (max-width: 400px) {
   .image-wrapper {
     width: 180px;
